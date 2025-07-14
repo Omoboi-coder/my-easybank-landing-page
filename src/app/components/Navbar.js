@@ -4,9 +4,10 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-     <nav className="relative container bg-white shadow-xs md:min-w-[108%]">
+     <nav className="relative">
         {/* flex container */}
-    <div className="flex my-0 py-2 mx-auto justify-between items-center md:py-2 md:px-4">
+    <div className="flex bg-gray-100 shadow-xs my-0 py-2
+     mx-auto justify-between items-center md:py-2 md:px-20">
 
       {/* navbar Logo */}
       <Image 
@@ -14,7 +15,7 @@ const Navbar = () => {
       alt="dark logo"
       width={170}
       height={170}
-      className=" ml-8 py-4 md:ml-38 md:mt-2"
+      className="ml-7 py-4 md:ml-0 md:mt-2"
       />
 
       {/* menu-items */}
@@ -26,10 +27,11 @@ const Navbar = () => {
         <a href="#" className='hover:text-gray-600'>Careers</a>
       </div>
       
-      <div className="hidden md:flex">
+      <div className="hidden md:flex ">
       <button 
       type="submit"
-      className=" bg-green-400 rounded-full px-8 text-[15px] text-white py-3 md:mr-35"
+      className=" bg-green-400 rounded-full px-8 text-[15px]
+       text-white py-[10px] md:mr-23"
       >
         Request Invite
       </button>

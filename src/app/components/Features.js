@@ -4,8 +4,8 @@ const Features = () => {
   return (
     <section id="features">
     {/* flex container */}
-        <div className="container flex flex-col bg-gray-100 pb-25 gap-8 mt-[60px] md:px-44 md:min-w-[107%] 
-         md:flex md:mt-[-130px]">
+        <div className="flex flex-col mx-auto bg-gray-100 pb-20 md:px-20 gap-8 mt-[60px] 
+         md:flex md:mt-[-140px]">
         <div className="flex flex-col items-center mt-20 md:items-start md:mt-25 md:space-y-4">
         <h2 className="text-4xl font-light text-center text-gray-800 max-w-[25rem] md:text-start md:max-w-[40rem] md:text-[38px]">
             Why Choose Digitalbank?
@@ -16,7 +16,7 @@ const Features = () => {
             </p>
         </div>
         {/* feature container*/}
-        <div className="flex flex-col md:flex-row gap-10 md:gap-12 md:mt-10">
+        <div className="flex flex-col min-w-full md:flex-row gap-10 md:items-start md:gap-8 md:w-[72rem] md:mt-10">
             {/* feature item 1 */}
             <div className="flex flex-col items-center space-y-8 md:space-y-8 md:items-start">
                 <img src="/images/icon-online.svg" 
@@ -28,7 +28,7 @@ const Features = () => {
                 <h3 className="mb-5 text-[25px] font-light text-gray-800 md:text-xl">
                     Online Banking
                     </h3>
-                <p className="text-gray-500 text-center max-w-[22rem] md:text-start md:max-w-[30rem]">
+                <p className="text-gray-500 text-center max-w-[22rem] md:text-start md:mb-10 md:max-w-[18rem]">
                      Our modern web and mobile applications allow you to keep track of your finances 
                      wherever you are in the world.
                     </p>
@@ -44,7 +44,7 @@ const Features = () => {
                 <h3 className="mb-5 text-[25px] font-light text-gray-800 md:text-xl">
                     Simple Budgeting
                     </h3>
-                <p className="text-gray-500 text-center max-w-[22rem] md:text-start md:max-w-[30rem]">
+                <p className="text-gray-500 text-center max-w-[22rem] md:text-start md:mb-10 md:max-w-[18rem]">
                      See exactly where your money goes each month. Receive notifications when you’re 
                      close to hitting your limits.
                     </p>
@@ -61,7 +61,7 @@ const Features = () => {
                 <h3 className="mb-5 text-[25px] font-light text-gray-800 md:text-xl">
                     Fast Onboarding
                     </h3>
-                <p className="text-gray-500 text-center max-w-[22rem] md:text-start md:max-w-[30rem]">
+                <p className="text-gray-500 text-center max-w-[22rem] md:text-start md:mb-10 md:max-w-[17rem]">
                     We don’t do branches. Open your account in minutes online and start taking control 
                     of your finances right away.
                     </p>
@@ -78,7 +78,7 @@ const Features = () => {
                 <h3 className="mb-5 text-[25px] font-light text-gray-800 md:text-xl">
                     Open API
                     </h3>
-                <p className="text-gray-500 text-center max-w-[22rem] md:text-start md:max-w-[35rem]">
+                <p className="text-gray-500 text-center max-w-[22rem] md:text-start md:mb-10 md:max-w-[19rem]">
                       Manage your savings, investments, pension, and much more from one account. Tracking 
                       your money has never been easier.
                      </p>   

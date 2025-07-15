@@ -20,9 +20,9 @@ const HamburgerMenu = () => {
           </button>
           {/* Mobile menu dropdown */}
       {menuOpen && (
-        <div className="absolute top-[90px] left-0 right-0 mx-auto w-[90%] bg-white 
-        text-center shadow-lg py-6 rounded-sm z-40 md:hidden">
-          <div className="flex flex-col space-y-4 shadow-2xs text-gray-700 text-xl font-medium">
+        <div className="absolute top-[72px] left-0 right-0 mx-auto w-[90%] bg-white 
+        text-center shadow-sm rounded-sm z-40 md:hidden">
+          <div className="flex flex-col space-y-4 py-6 shadow-2xs text-gray-700 text-xl font-medium">
             <Link href="#">Home</Link>
             <Link href="#">About</Link>
             <Link href="#">Contact</Link>

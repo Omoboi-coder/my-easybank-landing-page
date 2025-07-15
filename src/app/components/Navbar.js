@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import HamburgerMenu from './HamburgerMenu'
 
 const Navbar = () => {
   return (
@@ -18,28 +20,35 @@ const Navbar = () => {
       className="ml-7 py-4 md:ml-0 md:mt-2"
       />
 
-      {/* menu-items */}
-      <div className="hidden text-gray-400 md:space-x-6 md:flex md:py-4 md:ml-10">
-        <a href="#" className='hover:text-gray-600' >Home</a>
-        <a href="#" className='hover:text-gray-600'>About</a>
-        <a href="#" className='hover:text-gray-600'>Contact</a>
-        <a href="#" className='hover:text-gray-600'>Blog</a>
-        <a href="#" className='hover:text-gray-600'>Careers</a>
-      </div>
-      
-      <div className="hidden md:flex ">
-      <button 
-      type="submit"
-      className=" bg-green-400 rounded-full px-8 text-[15px]
-       text-white py-[10px] md:mr-23"
-      >
-        Request Invite
-      </button>
-      </div>
+      {/* Hamburger Menu */}
+      <HamburgerMenu />
 
+        
+      {/* Desktop menu-items with hover underline */}
+<div className="hidden text-gray-400 md:space-x-6 md:flex md:py-4 md:ml-10">
+  {["Home", "About", "Contact", "Blog", "Careers"].map((item) => (
+    <Link
+      key={item}
+      href="#"
+      className="relative group text-gray-600 font-medium"
+    >
+      {item}
+      <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-400
+       transition-all duration-300 group-hover:w-full"></span>
+    </Link>
+  ))}
+</div>
 
-    </div>
-
+       <div className="hidden md:flex ">
+            <button 
+            type="submit"
+            className=" bg-green-400/75 hover:bg-green-600/50 cursor-pointer rounded-full px-8 text-[15px]
+               text-white py-[10px] md:mr-23"
+            >
+               Request Invite
+            </button>
+            </div> 
+          </div>
    </nav>
   )
 }

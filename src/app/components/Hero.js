@@ -20,7 +20,7 @@ const Hero = () => {
              <div className="text-center md:flex md:text-start">
             <button 
               type="submit"
-              className="bg-green-400 rounded-full px-8 py-3 text-[17px] text-white md:text-[15px]">
+              className="bg-green-400/80 hover:bg-green-600/50 cursor-pointer rounded-full px-8 py-3 text-[17px] text-white md:text-[15px]">
                Request Invite
               </button>
               </div>
@@ -39,7 +39,7 @@ const Hero = () => {
         />
         </div>
 
-        <div className='absolute z-0 top-0 left-0 max-w-[27rem] min-h-[400px] right-[-20px] flex object-contain
+        <div className='absolute z-0 top-0 left-[-5] max-w-[30rem] min-h-[400px] right-[-10px] flex object-contain
          object-left-top md:hidden'>
         <Image
         src="/images/bg-intro-mobile.svg"

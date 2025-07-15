@@ -17,7 +17,7 @@ const Footer = () => {
                   />
 
                 {/* logo container*/}
-                <div className='flex space-x-4 text-center ml-15 md:ml-0 md:text-start md:px-2'>
+                <div className='flex space-x-4 text-center ml-13 md:ml-0 md:text-start md:px-2'>
                     {/* logo 1 */}
                 <div className='w-5'>
                   <Image 
@@ -97,7 +97,7 @@ const Footer = () => {
                  <div className="text-center md:text-end md:ml-25">
                  <button 
                 type="submit"
-                className=" bg-green-400 rounded-full px-9 text-[15px]
+                className=" bg-green-400/60 hover:bg-green-500/50 cursor-pointer rounded-full px-9 text-[15px]
                  text-white py-3"
                  >
                  Request Invite
